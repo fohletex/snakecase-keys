@@ -8,10 +8,14 @@ test(function (t) {
   t.end()
 })
 
-test('shallow conversion with {deep: false}', function (t) {
+test('deep', function (t) {
   t.deepEqual(
     Snake({ fooBar: { barBaz: 'qux' } }, { deep: false }),
     { foo_bar: { barBaz: 'qux' } }
+  )
+  t.deepEqual(
+    Snake({ deepTrue: { fooBar: 'baz', deepFalse: { fooBar: 'qux' } } }, { deep: function (k) { return k !== 'deepFalse' } }),
+    { deep_true: { foo_bar: 'baz', deep_false: { fooBar: 'qux' } } }
   )
   t.end()
 })
