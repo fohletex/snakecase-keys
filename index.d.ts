@@ -6,7 +6,7 @@ declare namespace snakecaseKeys {
 		Recurse nested objects and objects in arrays.
 		@default true
 		*/
-    readonly deep?: boolean | mapObject.DeepOptionFunction;
+    readonly deep?: boolean | mapObject.DeepKeyFilter;
 
     /**
 		Exclude keys from being snakeCased.

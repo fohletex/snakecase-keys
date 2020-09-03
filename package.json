@@ -30,7 +30,7 @@
     "index.d.ts"
   ],
   "dependencies": {
-    "map-obj": "fohletex/map-obj#9508c66ecc80b721a550e5b74e89cb2696638ac3",
+    "map-obj": "github:fohletex/map-obj#2d64acabc306877b14c8e69a2670cbcca3338820",
     "to-snake-case": "^1.0.0"
   },
   "engines": {
